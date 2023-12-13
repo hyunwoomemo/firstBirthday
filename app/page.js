@@ -25,7 +25,7 @@ export default function Home() {
     <Container>
       <Toaster />
       <MainImageContainer>
-        <StyleImage layout="responsive" src={logo} priority={true} quality={100} alt="logo" />
+        <StyleImage layout="responsive" objectFit="cover" src={logo} priority={true} quality={100} alt="logo" />
       </MainImageContainer>
       <ImageContainer>
         <StyleImage src={text1} quality={100} alt="text1" />
@@ -105,8 +105,8 @@ const ImageContainer = styled.div`
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  height: 300px;
+  width: 110%;
+  /* height: 300px; */
 `;
 
 const TextContainer = styled.div`

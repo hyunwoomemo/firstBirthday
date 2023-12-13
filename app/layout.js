@@ -6,7 +6,7 @@ export const metadata = {
   title: "지안이의 돌잔치",
   description: "지안이의 첫 생일!!!",
   openGraph: {
-    title: "지안이의 돌잔치 초대장 👶🏻",
+    title: "지안이의 돌잔치 초대장",
     description: "1월 13일 (토)",
     images: [
       {
