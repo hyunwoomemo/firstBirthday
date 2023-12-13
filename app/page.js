@@ -7,10 +7,22 @@ import text3 from "../public/images/text3.png";
 import styled from "styled-components";
 import TypeIt from "typeit-react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
+import { FaRegCopy } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
-  return (
+  const handleCopyClipBoard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+
+      toast.success("주소가 복사되었습니다.");
+    } catch (error) {}
+  };
+  //junjangsee.tistory.com/entry/React-리액트로-클립보드-복사-기능-만들어보기-feat-Custom-Hook [개발 여행:티스토리]
+
+  출처: https: return (
     <Container>
+      <Toaster />
       <MainImageContainer>
         <StyleImage layout="responsive" src={logo} priority={true} quality={100} alt="logo" />
       </MainImageContainer>
@@ -52,6 +64,7 @@ export default function Home() {
       <AddressContainer>
         <Text style={{ fontWeight: "bold" }}>주소</Text>
         <GrayText>충남 아산시 신정로 532 올드밀 3F 파티룸A</GrayText>
+        <FaRegCopy onClick={() => handleCopyClipBoard("충남 아산시 신정로 532 올드밀 3F 파티룸A")} />
       </AddressContainer>
     </Container>
   );
