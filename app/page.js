@@ -10,6 +10,7 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import { FaRegCopy } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import "./global.css";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   const handleCopyClipBoard = async (text) => {
@@ -60,6 +61,7 @@ export default function Home() {
         </ParentsItem>
         <Text style={{ fontSize: 14 }}>올림</Text>
       </ParentsContainer>
+      <Carousel />
       <TextImageContainer>
         <StyleImage src={map} quality={100} alt="map" style={{ margin: "1rem 0" }} />
       </TextImageContainer>
