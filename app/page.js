@@ -2,8 +2,8 @@
 import Image from "next/image";
 import logo from "../public/images/bibi9.jpg";
 import text1 from "../public/images/text1.png";
+import icon from "../public/images/icon.png";
 import map from "../public/images/map.png";
-import text3 from "../public/images/text3.png";
 import styled from "styled-components";
 import TypeIt from "typeit-react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
@@ -41,7 +41,7 @@ export default function Home() {
         </SecondRowText>
       </TextContainer>
       <TextImageContainer style={{ marginTop: 100 }}>
-        <TextImage src={text3} quality={100} alt="text3" />
+        <TextImage src={icon} width={100} height={100} quality={100} alt="text3" />
       </TextImageContainer>
       <TextContainer>
         <SecondText>어느덧 1년, 우리 지안이가 벌써  첫 번째 생일을 맞이했습니다.</SecondText>
@@ -102,10 +102,10 @@ const Header = styled.div`
 
 const ImageContainer = styled.div`
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 90%;
   height: 300px;
 `;
 
@@ -145,7 +145,8 @@ const TextImageContainer = styled.div`
 `;
 
 const TextImage = styled(StyleImage)`
-  width: 70%;
+  width: 50px;
+  height: fit-content;
 `;
 
 const SecondText = styled(GrayText)`
@@ -189,4 +190,5 @@ const AddressContainer = styled.div`
   display: flex;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 `;
