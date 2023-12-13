@@ -22,7 +22,7 @@ export default function Home() {
   //junjangsee.tistory.com/entry/React-리액트로-클립보드-복사-기능-만들어보기-feat-Custom-Hook [개발 여행:티스토리]
 
   출처: https: return (
-    <Container>
+    <Container className="container">
       <Toaster />
       <MainImageContainer>
         <StyleImage layout="responsive" objectFit="cover" src={logo} priority={true} quality={100} alt="logo" />
@@ -32,12 +32,12 @@ export default function Home() {
       </ImageContainer>
       <TextContainer>
         <FirstRowText>
-          <Text>이지안 첫 생일</Text>
-          <GrayText>2024년 1월 13일 (토)</GrayText>
+          <Text style={{ letterSpacing: 8 }}>이지안첫생일</Text>
+          <GrayText style={{ fontSize: 14 }}>2024년 1월 13일 (토)</GrayText>
         </FirstRowText>
         <SecondRowText>
-          <GrayText>소중한 분들을 초대합니다.</GrayText>
-          <GrayText>오후 5:00 올드밀 3층 A룸</GrayText>
+          <GrayText style={{ fontSize: 14 }}>소중한 분들을 초대합니다.</GrayText>
+          <GrayText style={{ fontSize: 14 }}>오후 5:00 올드밀 3층 A룸</GrayText>
         </SecondRowText>
       </TextContainer>
       <TextImageContainer style={{ marginTop: 100 }}>
@@ -46,7 +46,8 @@ export default function Home() {
       <TextContainer>
         <SecondText>어느덧 1년, 우리 지안이가 벌써  첫 번째 생일을 맞이했습니다.</SecondText>
         <SecondText>소중한 자리에 소중한 분들을 모시고자 합니다.</SecondText>
-        <SecondText>바쁘시더라도 참석해주시어 지안이를 축하해주시면 정말 감사하겠습니다.</SecondText>
+        <SecondText>바쁘시더라도 참석해주시어 지안이를 축하해주시면</SecondText>
+        <SecondText>정말 감사하겠습니다.</SecondText>
       </TextContainer>
       <ParentsContainer>
         <ParentsItem>
@@ -105,7 +106,7 @@ const ImageContainer = styled.div`
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110%;
+  width: 100%;
   /* height: 300px; */
 `;
 
@@ -150,7 +151,7 @@ const TextImage = styled(StyleImage)`
 `;
 
 const SecondText = styled(GrayText)`
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
 `;
@@ -191,4 +192,5 @@ const AddressContainer = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 `;
