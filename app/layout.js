@@ -5,11 +5,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "지안이의 돌잔치",
   description: "지안이의 첫 생일!!!",
-  image: "https://ifh.cc/g/ymC9Yc.jpg",
   openGraph: {
     title: "지안이의 돌잔치 초대장 👶🏻",
     description: "1월 13일 (토)",
-    image: "https://ifh.cc/g/ymC9Yc.jpg",
+    images: [
+      {
+        url: "https://ifh.cc/g/ymC9Yc.jpg",
+        width: 800,
+        height: 600,
+      },
+    ],
   },
 };
 
