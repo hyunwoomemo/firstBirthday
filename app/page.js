@@ -178,8 +178,7 @@ const ParentsTitle = styled.p`
   margin: 0;
 `;
 const ParentsName = styled.p`
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
   padding: 0;
   margin: 0;
 `;
