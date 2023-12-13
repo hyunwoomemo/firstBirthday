@@ -9,6 +9,7 @@ import TypeIt from "typeit-react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { FaRegCopy } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
+import "./global.css";
 
 export default function Home() {
   const handleCopyClipBoard = async (text) => {
@@ -39,7 +40,7 @@ export default function Home() {
           <GrayText>오후 5:00 올드밀 3층 A룸</GrayText>
         </SecondRowText>
       </TextContainer>
-      <TextImageContainer style={{ marginTop: 200 }}>
+      <TextImageContainer style={{ marginTop: 100 }}>
         <TextImage src={text3} quality={100} alt="text3" />
       </TextImageContainer>
       <TextContainer>
@@ -56,7 +57,7 @@ export default function Home() {
           <ParentsTitle>엄마</ParentsTitle>
           <ParentsName>조은비</ParentsName>
         </ParentsItem>
-        <Text style={{ fontSize: 12 }}>올림</Text>
+        <Text style={{ fontSize: 14 }}>올림</Text>
       </ParentsContainer>
       <TextImageContainer>
         <StyleImage src={map} quality={100} alt="map" style={{ margin: "1rem 0" }} />
@@ -127,7 +128,7 @@ const SecondRowText = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 `;
@@ -148,10 +149,9 @@ const TextImage = styled(StyleImage)`
 `;
 
 const SecondText = styled(GrayText)`
-  font-size: 12px;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
-  white-space: nowrap;
 `;
 
 const ParentsContainer = styled.div`
