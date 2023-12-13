@@ -11,9 +11,6 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 export default function Home() {
   return (
     <Container>
-      <div style={{ width: "90%", margin: "1rem auto", textAlign: "center" }}>
-        <Title>지안이의 첫번째 생일</Title>
-      </div>
       <MainImageContainer>
         <StyleImage layout="responsive" src={logo} priority={true} quality={100} alt="logo" />
       </MainImageContainer>
@@ -30,8 +27,8 @@ export default function Home() {
           <GrayText>오후 5:00 올드밀 3층 A룸</GrayText>
         </SecondRowText>
       </TextContainer>
-      <TextImageContainer>
-        <TextImage src={text3} quality={100} alt="text1" />
+      <TextImageContainer style={{ marginTop: 200 }}>
+        <TextImage src={text3} quality={100} alt="text3" />
       </TextImageContainer>
       <TextContainer>
         <SecondText>어느덧 1년, 우리 지안이가 벌써  첫 번째 생일을 맞이했습니다.</SecondText>
@@ -82,7 +79,6 @@ const MainImageContainer = styled.div`
 const StyleImage = styled(Image)`
   width: 100%;
   height: fit-content;
-  border-radius: 20px;
 `;
 
 const Header = styled.div`
