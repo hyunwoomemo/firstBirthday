@@ -26,7 +26,7 @@ export default function Home() {
     <Container className="container">
       <Toaster />
       <MainImageContainer>
-        <StyleImage layout="responsive" objectFit="cover" src={logo} priority={true} quality={100} alt="logo" />
+        <StyleImage layout="responsive" objectFit="cover" onLoad={() => console.log("load")} src={logo} priority={true} quality={100} alt="logo" />
       </MainImageContainer>
       <ImageContainer>
         <StyleImage src={text1} quality={100} alt="text1" />

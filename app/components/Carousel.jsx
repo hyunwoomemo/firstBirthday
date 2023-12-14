@@ -28,25 +28,25 @@ const Carousel = () => {
   };
   return (
     <div style={{ padding: "0 1rem" }}>
-      <Swiper spaceBetween={50} style={{ height: "auto" }} slidesPerView={2} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)}>
+      <Swiper spaceBetween={50} style={{ height: "auto" }} slidesPerView={2.5} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)}>
         <SwiperSlide>
           <ImageContainer>
-            <Image alt="image" layout="responsive" style={{ borderRadius: 10, position: "absolute" }} objectFit="cover" src={image1} />
+            <Image alt="image" layout="responsive" style={{ borderRadius: 10, position: "absolute" }} src={image1} />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <Image alt="image" layout="responsive" width={"90%"} style={{ borderRadius: 10 }} objectFit="cover" src={image2} />
+            <Image alt="image" layout="responsive" width={"90%"} style={{ borderRadius: 10 }} src={image2} />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <Image alt="image" layout="responsive" width={"90%"} style={{ borderRadius: 10 }} objectFit="cover" src={image3} />
+            <Image alt="image" layout="responsive" width={"90%"} style={{ borderRadius: 10 }} src={image3} />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <Image alt="image" layout="responsive" width={"90%"} style={{ borderRadius: 10 }} objectFit="cover" src={image4} />
+            <Image alt="image" layout="responsive" width={"90%"} style={{ borderRadius: 10 }} src={image4} />
           </ImageContainer>
         </SwiperSlide>
       </Swiper>
