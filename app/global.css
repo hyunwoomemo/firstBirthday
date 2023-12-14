@@ -8,6 +8,11 @@
   font-family: "Dovemayo_wild";
 }
 
+html {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

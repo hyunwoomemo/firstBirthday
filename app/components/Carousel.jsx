@@ -13,12 +13,6 @@ import styled from "styled-components";
 const images = [image1, image2, image3, image4];
 
 const Carousel = () => {
-  console.log(window.scrollY);
-
-  window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
-  });
-
   const swiperRef = useRef();
   const [active, setActive] = useState(false);
   const breakpoints = {

@@ -27,10 +27,9 @@ export default function Home() {
       <Toaster />
       <MainImageContainer>
         <StyleImage layout="responsive" objectFit="cover" onLoad={() => console.log("load")} src={logo} priority={true} quality={100} alt="logo" />
+        <StyleImageText src={text1} quality={100} alt="text1" />
       </MainImageContainer>
-      <ImageContainer>
-        <StyleImage src={text1} quality={100} alt="text1" />
-      </ImageContainer>
+
       <TextContainer>
         <FirstRowText>
           <Text style={{ letterSpacing: 8 }}>이지안첫생일</Text>
@@ -96,6 +95,10 @@ const MainImageContainer = styled.div`
 const StyleImage = styled(Image)`
   width: 100%;
   height: fit-content;
+`;
+
+const StyleImageText = styled(Image)`
+  position: absolute;
 `;
 
 const Header = styled.div`
