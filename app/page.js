@@ -98,7 +98,16 @@ const StyleImage = styled(Image)`
 `;
 
 const StyleImageText = styled(Image)`
-  position: absolute;
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    width: 100%;
+    top: -5%;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 25%;
+    top: -5%;
+  }
 `;
 
 const Header = styled.div`
