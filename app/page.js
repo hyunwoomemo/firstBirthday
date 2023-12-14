@@ -61,7 +61,6 @@ export default function Home() {
         </ParentsItem>
         <Text style={{ fontSize: 14 }}>올림</Text>
       </ParentsContainer>
-      <Carousel />
       <TextImageContainer>
         <StyleImage src={map} quality={100} alt="map" style={{ margin: "1rem 0" }} />
       </TextImageContainer>
@@ -70,6 +69,7 @@ export default function Home() {
         <GrayText>충남 아산시 신정로 532 올드밀 3F 파티룸A</GrayText>
         <FaRegCopy onClick={() => handleCopyClipBoard("충남 아산시 신정로 532 올드밀 3F 파티룸A")} />
       </AddressContainer>
+      <Carousel />
     </Container>
   );
 }

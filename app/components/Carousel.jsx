@@ -27,7 +27,7 @@ const Carousel = () => {
     },
   };
   return (
-    <div style={{ padding: "0 1rem" }}>
+    <div style={{ padding: "3rem 1rem" }}>
       <Swiper spaceBetween={50} style={{ height: "auto" }} slidesPerView={2.5} onSlideChange={() => console.log("slide change")} onSwiper={(swiper) => console.log(swiper)}>
         <SwiperSlide>
           <ImageContainer>
