@@ -100,8 +100,8 @@ const StyleImage = styled(Image)`
 const StyleImageText = styled(Image)`
   @media screen and (max-width: 768px) {
     position: absolute;
-    width: 100%;
-    top: -5%;
+    width: 90%;
+    top: -6%;
   }
   @media screen and (min-width: 768px) {
     position: absolute;
