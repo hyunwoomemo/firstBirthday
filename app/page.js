@@ -37,7 +37,7 @@ export default function Home() {
         </FirstRowText>
         <SecondRowText>
           <GrayText style={{ fontSize: 14 }}>소중한 분들을 초대합니다.</GrayText>
-          <GrayText style={{ fontSize: 14 }}>오후 5:00 올드밀 3층 A룸</GrayText>
+          <GrayText style={{ fontSize: 14 }}>오후 5:30 올드밀 3층 A룸</GrayText>
         </SecondRowText>
       </TextContainer>
       <TextImageContainer style={{ marginTop: 100 }}>
